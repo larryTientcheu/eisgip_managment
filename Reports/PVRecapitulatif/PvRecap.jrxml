@@ -1,0 +1,649 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="ReleveNotes" language="groovy" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="74fea093-b8b1-440d-9f40-03bffc0d0441">
+	<property name="ireport.zoom" value="1.2100000000000002"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="432"/>
+	<style name="Crosstab Data Text" hAlign="Center"/>
+	<style name="table">
+		<box>
+			<pen lineWidth="1.0" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table_TH" mode="Opaque" backcolor="#F0F8FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table_CH" mode="Opaque" backcolor="#BFE1FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table_TD" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 1">
+		<box>
+			<pen lineWidth="1.0" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 1_TH" mode="Opaque" backcolor="#F0F8FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 1_CH" mode="Opaque" backcolor="#BFE1FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 1_TD" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 2">
+		<box>
+			<pen lineWidth="1.0" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 2_TH" mode="Opaque" backcolor="#F0F8FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 2_CH" mode="Opaque" backcolor="#BFE1FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 2_TD" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 3">
+		<box>
+			<pen lineWidth="1.0" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 3_TH" mode="Opaque" backcolor="#F0F8FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 3_CH" mode="Opaque" backcolor="#BFE1FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 3_TD" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 4">
+		<box>
+			<pen lineWidth="1.0" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 4_TH" mode="Opaque" backcolor="#F0F8FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 4_CH" mode="Opaque" backcolor="#BFE1FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 4_TD" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 5">
+		<box>
+			<pen lineWidth="1.0" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 5_TH" mode="Opaque" backcolor="#F0F8FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 5_CH" mode="Opaque" backcolor="#BFE1FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 5_TD" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 6">
+		<box>
+			<pen lineWidth="1.0" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 6_TH" mode="Opaque" backcolor="#F0F8FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 6_CH" mode="Opaque" backcolor="#BFE1FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 6_TD" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 7">
+		<box>
+			<pen lineWidth="1.0" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 7_TH" mode="Opaque" backcolor="#F0F8FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 7_CH" mode="Opaque" backcolor="#BFE1FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 7_TD" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<subDataset name="TableSem1" uuid="6bec4d23-957a-4e85-9f12-1bd72fd17c93">
+		<parameter name="matriculeTable" class="java.lang.String" isForPrompting="false"/>
+		<parameter name="MoyenneMAP1" class="java.util.Map" isForPrompting="false">
+			<parameterDescription><![CDATA[]]></parameterDescription>
+			<defaultValueExpression><![CDATA[]]></defaultValueExpression>
+		</parameter>
+		<parameter name="DetteMap1" class="java.util.Map" isForPrompting="false"/>
+		<queryString>
+			<![CDATA[select INTITULES as "INTITULES",CODES as "CODES",CC "CC",EF "EF",(TOTAL*20)/100 as "MOYENNESUR20",RATRAPPAGE from public.etudiant,
+(select
+ mat,cours.nom as INTITULES,cours.codesperso as CODES,cours.credits as CREDITS,cours.semestre as ns ,CC,EF,RATRAPPAGE,total,COTE,POINTS,MENTION,cours.semestre as Cs,cours.id_anee as Cann,cours.id_niveaux as cNiv from public.cours,
+(select
+ notes.codes as coden,notes.matricule as mat,notes.cct as CC,
+ notes.total as TOTAL,notes.cote as COTE,notes.points as POINTS,notes.mention as MENTION,notes.examen as EF,notes.ratrappage as RATRAPPAGE
+ from public.notes where notes.matricule = $P{matriculeTable}) as noteparEtud
+where cours.codes=coden and cours.id_anee='2014/2015' AND cours.semestre='1') as noteParsCourDETUDetaEFesemestre
+where etudiant.matricule=mat and etudiant.id_niveaux=cNiv;]]>
+		</queryString>
+		<field name="INTITULES" class="java.lang.String"/>
+		<field name="CODES" class="java.lang.String"/>
+		<field name="CC" class="java.lang.Double"/>
+		<field name="EF" class="java.lang.Double"/>
+		<field name="MOYENNESUR20" class="java.lang.Double"/>
+		<field name="ratrappage" class="java.lang.Double"/>
+		<variable name="moyennesurTotal" class="java.lang.Float" calculation="Average">
+			<variableExpression><![CDATA[$F{MOYENNESUR20}]]></variableExpression>
+		</variable>
+		<variable name="detteSem1" class="java.lang.Integer" calculation="Sum">
+			<variableExpression><![CDATA[$F{MOYENNESUR20}<10?1:0]]></variableExpression>
+		</variable>
+		<variable name="putSem1" class="java.lang.String" incrementType="Report">
+			<variableExpression><![CDATA[$P{MoyenneMAP1}.put("KEY",$V{moyennesurTotal})]]></variableExpression>
+			<initialValueExpression><![CDATA[]]></initialValueExpression>
+		</variable>
+		<variable name="putDetSem" class="java.lang.String" incrementType="Report">
+			<variableExpression><![CDATA[$P{DetteMap1}.put("KEY2", $V{detteSem1} )]]></variableExpression>
+		</variable>
+	</subDataset>
+	<subDataset name="TableSem2" uuid="3f9c8dd2-2756-4927-92d5-475892d731d6">
+		<parameter name="matriculeTable2" class="java.lang.String" isForPrompting="false"/>
+		<parameter name="MoyenneMAP2" class="java.util.Map" isForPrompting="false">
+			<defaultValueExpression><![CDATA[]]></defaultValueExpression>
+		</parameter>
+		<parameter name="DetteSEM2" class="java.util.Map" isForPrompting="false"/>
+		<queryString>
+			<![CDATA[select INTITULES as "INTITULES",CODES as "CODES",CC "CC",EF "EF",(TOTAL*20)/100 as "MOYENNESUR20",RATRAPPAGE from public.etudiant,
+(select
+ mat,cours.nom as INTITULES,cours.codesperso as CODES,cours.credits as CREDITS,cours.semestre as ns ,CC,EF,RATRAPPAGE,total,COTE,POINTS,MENTION,cours.semestre as Cs,cours.id_anee as Cann,cours.id_niveaux as cNiv from public.cours,
+(select
+ notes.codes as coden,notes.matricule as mat,notes.cct as CC,
+ notes.total as TOTAL,notes.cote as COTE,notes.points as POINTS,notes.mention as MENTION,notes.examen as EF,notes.ratrappage as RATRAPPAGE
+ from public.notes where notes.matricule = $P{matriculeTable2}) as noteparEtud
+where cours.codes=coden and cours.id_anee='2014/2015' AND cours.semestre='2') as noteParsCourDETUDetaEFesemestre
+where etudiant.matricule=mat and etudiant.id_niveaux=cNiv;]]>
+		</queryString>
+		<field name="INTITULES" class="java.lang.String"/>
+		<field name="CODES" class="java.lang.String"/>
+		<field name="CC" class="java.lang.Double"/>
+		<field name="EF" class="java.lang.Double"/>
+		<field name="MOYENNESUR20" class="java.lang.Double"/>
+		<field name="ratrappage" class="java.lang.Double"/>
+		<variable name="moyennesurTotal" class="java.lang.Float" calculation="Average">
+			<variableExpression><![CDATA[$F{MOYENNESUR20}]]></variableExpression>
+		</variable>
+		<variable name="detteSem1" class="java.lang.Integer" calculation="Sum">
+			<variableExpression><![CDATA[$F{MOYENNESUR20}<10?1:0]]></variableExpression>
+		</variable>
+		<variable name="putSem2" class="java.lang.String" incrementType="Report">
+			<variableExpression><![CDATA[$P{MoyenneMAP2}.put("KEY1",$V{moyennesurTotal})]]></variableExpression>
+		</variable>
+		<variable name="putDetteSem2" class="java.lang.String" incrementType="Report">
+			<variableExpression><![CDATA[$P{DetteSEM2}.put("KEY3",$V{detteSem1})]]></variableExpression>
+		</variable>
+	</subDataset>
+	<parameter name="SUBREPORT_DIR" class="java.lang.String" isForPrompting="false">
+		<defaultValueExpression><![CDATA["C:\\Users\\LArry Jordan\\Desktop\\EISGIP\\iReport\\"]]></defaultValueExpression>
+	</parameter>
+	<parameter name="MoyenSem1" class="java.util.Map" isForPrompting="false">
+		<defaultValueExpression><![CDATA[new java.util.HashMap()]]></defaultValueExpression>
+	</parameter>
+	<parameter name="Etudiant De Niveaux" class="java.lang.Integer"/>
+	<parameter name="Anee" class="java.lang.String"/>
+	<queryString>
+		<![CDATA[select etudiant.nom, etudiant.prenom,etudiant.age,etudiant.matricule as mat,etudiant.id_niveaux,etudiant.age,etudiant.lieu from public.etudiant,
+(select id_anee as anee, matricule as matri from etudiant_annee) as aliass
+where id_niveaux=$P{Etudiant De Niveaux} and matri=etudiant.matricule and anee = $P{Anee} order by id_niveaux,nom;]]>
+	</queryString>
+	<field name="nom" class="java.lang.String"/>
+	<field name="prenom" class="java.lang.String"/>
+	<field name="age" class="java.lang.String"/>
+	<field name="mat" class="java.lang.String"/>
+	<field name="id_niveaux" class="java.lang.Integer"/>
+	<field name="lieu" class="java.lang.String"/>
+	<variable name="MoyenneSEM1" class="java.util.Map">
+		<variableExpression><![CDATA[new java.util.HashMap()]]></variableExpression>
+		<initialValueExpression><![CDATA[]]></initialValueExpression>
+	</variable>
+	<variable name="MoyenSEM2" class="java.util.Map">
+		<variableExpression><![CDATA[new java.util.HashMap()]]></variableExpression>
+	</variable>
+	<variable name="MoyenneTotal" class="java.lang.String"/>
+	<variable name="detteSem1" class="java.util.Map">
+		<variableExpression><![CDATA[new java.util.HashMap()]]></variableExpression>
+	</variable>
+	<variable name="detteSem2" class="java.util.Map">
+		<variableExpression><![CDATA[new java.util.HashMap()]]></variableExpression>
+	</variable>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<pageHeader>
+		<band height="42" splitType="Stretch">
+			<image onErrorType="Icon">
+				<reportElement x="32" y="0" width="93" height="42" uuid="24e88a44-3014-4526-ab1c-159e363fa3d9"/>
+				<imageExpression><![CDATA["ERRR.png"]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement x="45" y="-10" width="462" height="52" uuid="8eb6c46b-1806-4dd7-8184-83054cd2e823"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Calibri" size="12"/>
+				</textElement>
+				<text><![CDATA[ECOLE INTERNATIONALE DES SCIENCES DE GESTION
+ET D'INGENIERIE PETROLIERE
+PROCES VERBAL RECAPITULATIF DES NOTES]]></text>
+			</staticText>
+		</band>
+	</pageHeader>
+	<detail>
+		<band height="52" splitType="Stretch">
+			<staticText>
+				<reportElement x="32" y="10" width="31" height="20" uuid="14e11821-b5ec-48f3-837c-503f564f93b7"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Calibri"/>
+				</textElement>
+				<text><![CDATA[NOM:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="32" y="30" width="93" height="20" uuid="90b4b573-552e-4685-86b8-d61385f24952"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Calibri"/>
+				</textElement>
+				<text><![CDATA[ANNEE ACADEMIQUE :]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="410" y="10" width="66" height="20" uuid="7b8b3519-6a11-4dde-bf6e-c23df4c45a7d"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Calibri"/>
+				</textElement>
+				<text><![CDATA[MATRICULE:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="441" y="30" width="48" height="20" uuid="60375bf2-016e-454f-85e3-96ec6c7212a8"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Calibri"/>
+				</textElement>
+				<text><![CDATA[NIVEAU :]]></text>
+			</staticText>
+			<textField isStretchWithOverflow="true" evaluationTime="Page">
+				<reportElement x="63" y="10" width="74" height="20" isPrintWhenDetailOverflows="true" uuid="0deb73af-b6b3-41ed-9f4e-8a20cab18e8e"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Calibri"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{nom}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" evaluationTime="Page">
+				<reportElement x="137" y="10" width="100" height="20" uuid="56e44981-cd1a-41fd-b121-3e8346a62039"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Calibri"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{prenom}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" evaluationTime="Page">
+				<reportElement x="476" y="10" width="79" height="20" uuid="60190f7a-deee-496e-8268-79689d1277b2"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Calibri"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{mat}]]></textFieldExpression>
+			</textField>
+			<textField evaluationTime="Page">
+				<reportElement x="489" y="30" width="18" height="20" uuid="ce2e7928-fa50-4839-b1cf-903e3e32f4bc"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Calibri"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{id_niveaux}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="125" y="32" width="100" height="20" uuid="b7edc945-0df5-400e-a97b-ce8da11a51c0"/>
+				<textElement verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$P{Anee}]]></textFieldExpression>
+			</textField>
+		</band>
+		<band height="760">
+			<componentElement>
+				<reportElement key="table 6" style="table 6" x="45" y="26" width="475" height="105" uuid="1bd1e0fe-50a5-4698-8bae-dae80ac24962"/>
+				<jr:table xmlns:jr="http://jasperreports.sourceforge.net/jasperreports/components" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports/components http://jasperreports.sourceforge.net/xsd/components.xsd" whenNoDataType="AllSectionsNoDetail">
+					<datasetRun subDataset="TableSem1" uuid="18566342-e5fe-4a49-8d3f-fdd55bdf1c25">
+						<datasetParameter name="MoyenneMAP1">
+							<datasetParameterExpression><![CDATA[$V{MoyenneSEM1}]]></datasetParameterExpression>
+						</datasetParameter>
+						<datasetParameter name="DetteMap1">
+							<datasetParameterExpression><![CDATA[$V{detteSem1}]]></datasetParameterExpression>
+						</datasetParameter>
+						<datasetParameter name="matriculeTable">
+							<datasetParameterExpression><![CDATA[$F{mat}.toString()]]></datasetParameterExpression>
+						</datasetParameter>
+						<connectionExpression><![CDATA[$P{REPORT_CONNECTION}]]></connectionExpression>
+					</datasetRun>
+					<jr:column width="211" uuid="7ce23509-3384-4c7c-960c-5eb5d42fa43f">
+						<jr:tableHeader height="17" rowSpan="1">
+							<staticText>
+								<reportElement x="0" y="0" width="211" height="17" uuid="bcc29182-e8d7-4b3c-b821-c3fd139b893f"/>
+								<textElement verticalAlignment="Bottom">
+									<font isBold="true"/>
+								</textElement>
+								<text><![CDATA[SEMESTRE 1]]></text>
+							</staticText>
+						</jr:tableHeader>
+						<jr:tableFooter height="16" rowSpan="1">
+							<staticText>
+								<reportElement x="0" y="0" width="211" height="16" uuid="5b1fe1e5-f8b6-4aa5-854a-467163e4dc6f"/>
+								<textElement verticalAlignment="Bottom">
+									<font isBold="true"/>
+								</textElement>
+								<text><![CDATA[SEMESTRE 2]]></text>
+							</staticText>
+						</jr:tableFooter>
+						<jr:columnHeader style="table 6_CH" height="15" rowSpan="1">
+							<staticText>
+								<reportElement x="0" y="1" width="211" height="14" uuid="90aecf0f-17aa-4ff4-9c23-22eaac77f479"/>
+								<textElement textAlignment="Center"/>
+								<text><![CDATA[INTITULES]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:columnFooter height="33" rowSpan="1">
+							<staticText>
+								<reportElement x="0" y="0" width="211" height="16" uuid="7cb9897a-4fa6-47cf-bea6-b9f039fbe971"/>
+								<textElement verticalAlignment="Middle">
+									<font isBold="true"/>
+								</textElement>
+								<text><![CDATA[MOYENNE]]></text>
+							</staticText>
+							<staticText>
+								<reportElement x="0" y="16" width="211" height="17" uuid="67a4fb04-0e5f-4325-8ac0-09317d1ac328"/>
+								<textElement verticalAlignment="Middle"/>
+								<text><![CDATA[DETTES]]></text>
+							</staticText>
+						</jr:columnFooter>
+						<jr:detailCell style="table 6_TD" height="13" rowSpan="1">
+							<textField>
+								<reportElement x="0" y="0" width="211" height="13" uuid="c867e604-e7cc-417d-8c2c-f9ea6fcdbe24"/>
+								<textFieldExpression><![CDATA[$F{INTITULES}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="66" uuid="2044a9cc-0371-4802-8825-912f890b1c5d">
+						<jr:columnHeader style="table 6_CH" height="15" rowSpan="1">
+							<staticText>
+								<reportElement x="0" y="0" width="66" height="14" uuid="451022f3-8179-4489-8103-0d9f193ebc4f"/>
+								<textElement textAlignment="Center"/>
+								<text><![CDATA[CODES]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:detailCell style="table 6_TD" height="13" rowSpan="1">
+							<textField>
+								<reportElement x="0" y="0" width="66" height="13" uuid="ccd7e7a3-ca6d-4b72-8255-7c77b6b83301"/>
+								<textElement textAlignment="Center"/>
+								<textFieldExpression><![CDATA[$F{CODES}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="37" uuid="f79d4606-93e8-4f63-ba97-d2bfc7d496d8">
+						<jr:columnHeader style="table 6_CH" height="15" rowSpan="1">
+							<staticText>
+								<reportElement x="0" y="0" width="37" height="14" uuid="68c2f0a0-4bb1-4cd8-8f1a-cce28b36b2e4"/>
+								<textElement textAlignment="Center"/>
+								<text><![CDATA[CC]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:detailCell style="table 6_TD" height="13" rowSpan="1">
+							<textField pattern="###0.00">
+								<reportElement x="0" y="0" width="37" height="13" uuid="75692751-b08d-45fe-9719-db42e3b3329c"/>
+								<textElement textAlignment="Center"/>
+								<textFieldExpression><![CDATA[$F{CC}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="25" uuid="ecc1ef9b-5fe8-4afc-835e-2aaddc8beed5">
+						<jr:columnHeader style="table 6_CH" height="15" rowSpan="1">
+							<staticText>
+								<reportElement x="0" y="0" width="25" height="14" uuid="fcdc4a0d-4a52-499a-9819-491df2790522"/>
+								<textElement textAlignment="Center"/>
+								<text><![CDATA[EF]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:detailCell style="table 6_TD" height="13" rowSpan="1">
+							<textField pattern="###0.00">
+								<reportElement x="0" y="0" width="25" height="13" uuid="c8fadd20-d5b7-434c-809d-5c9255ccd50f"/>
+								<textElement textAlignment="Center"/>
+								<textFieldExpression><![CDATA[$F{ratrappage}==null?$F{EF}:$F{ratrappage}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="97" uuid="ef43f686-c109-4261-aa11-1935e16e825e">
+						<jr:columnHeader style="table 6_CH" height="15" rowSpan="1">
+							<staticText>
+								<reportElement x="0" y="0" width="97" height="14" uuid="22468fcb-ae4d-48c1-933f-fd5181bddee0"/>
+								<textElement textAlignment="Center" verticalAlignment="Top"/>
+								<text><![CDATA[MOYENNESUR20]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:columnFooter height="33" rowSpan="1">
+							<textField evaluationTime="Page" pattern="###0.00" isBlankWhenNull="false">
+								<reportElement x="0" y="0" width="97" height="17" uuid="df870a43-fe61-460d-8048-618421d2099b"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font size="12" isBold="true"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$V{moyennesurTotal}]]></textFieldExpression>
+							</textField>
+							<textField evaluationTime="Page" isBlankWhenNull="false">
+								<reportElement x="0" y="17" width="97" height="16" uuid="c3906730-af7f-47cd-a034-6f71886e0d8e"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font size="12" isBold="true"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$V{detteSem1}]]></textFieldExpression>
+							</textField>
+						</jr:columnFooter>
+						<jr:detailCell style="table 6_TD" height="13" rowSpan="1">
+							<textField pattern="###0.00">
+								<reportElement x="0" y="0" width="97" height="13" uuid="6c20fe05-63eb-4020-b0a6-a2b3da6d13cd"/>
+								<textElement textAlignment="Center" verticalAlignment="Top"/>
+								<textFieldExpression><![CDATA[$F{MOYENNESUR20}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+				</jr:table>
+			</componentElement>
+			<componentElement>
+				<reportElement key="table 7" style="table 7" positionType="Float" x="45" y="131" width="475" height="140" uuid="0cd6c4f1-bb74-403b-b661-6672f623e0a7"/>
+				<jr:table xmlns:jr="http://jasperreports.sourceforge.net/jasperreports/components" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports/components http://jasperreports.sourceforge.net/xsd/components.xsd" whenNoDataType="AllSectionsNoDetail">
+					<datasetRun subDataset="TableSem2" uuid="a7b5724e-b010-428c-9b74-23fa31a151a4">
+						<datasetParameter name="matriculeTable2">
+							<datasetParameterExpression><![CDATA[$F{mat}.toString()]]></datasetParameterExpression>
+						</datasetParameter>
+						<datasetParameter name="MoyenneMAP2">
+							<datasetParameterExpression><![CDATA[$V{MoyenSEM2}]]></datasetParameterExpression>
+						</datasetParameter>
+						<datasetParameter name="DetteSEM2">
+							<datasetParameterExpression><![CDATA[$V{detteSem2}]]></datasetParameterExpression>
+						</datasetParameter>
+						<connectionExpression><![CDATA[$P{REPORT_CONNECTION}]]></connectionExpression>
+					</datasetRun>
+					<jr:column width="213" uuid="a5e46524-58e6-4207-bccc-fbd0cf15f44a">
+						<jr:columnHeader style="table 7_CH" height="15" rowSpan="1">
+							<staticText>
+								<reportElement x="0" y="0" width="213" height="15" uuid="9e143569-512d-45b7-a1fc-f9fe4529fa7f"/>
+								<textElement textAlignment="Center"/>
+								<text><![CDATA[INTITULES]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:columnFooter style="table 7_CH" height="42" rowSpan="1">
+							<staticText>
+								<reportElement x="0" y="0" width="213" height="22" uuid="44915052-2e0e-478e-b2ca-e8c6417c3617"/>
+								<textElement verticalAlignment="Middle"/>
+								<text><![CDATA[MOYENNE]]></text>
+							</staticText>
+							<staticText>
+								<reportElement x="2" y="22" width="211" height="20" uuid="567fcd06-d00a-42e9-9302-67891fc0ab23"/>
+								<textElement verticalAlignment="Middle"/>
+								<text><![CDATA[DETTES]]></text>
+							</staticText>
+						</jr:columnFooter>
+						<jr:detailCell style="table 7_TD" height="14" rowSpan="1">
+							<textField>
+								<reportElement x="0" y="0" width="213" height="14" uuid="d8b10277-bab7-47cd-98e5-a9608e3bc9d3"/>
+								<textFieldExpression><![CDATA[$F{INTITULES}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="62" uuid="09ea26ac-7b41-4abf-ba60-3514e5d0719a">
+						<jr:columnHeader style="table 7_CH" height="15" rowSpan="1">
+							<staticText>
+								<reportElement x="0" y="1" width="61" height="14" uuid="86fcfac6-53f6-4137-8eee-338ece8cbd5e"/>
+								<textElement textAlignment="Center"/>
+								<text><![CDATA[CODES]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:detailCell style="table 7_TD" height="14" rowSpan="1">
+							<textField>
+								<reportElement x="0" y="0" width="61" height="14" uuid="4b24f9e9-ac65-47ab-9cc9-b57f5a5ba890"/>
+								<textElement textAlignment="Center"/>
+								<textFieldExpression><![CDATA[$F{CODES}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="28" uuid="ce3175ea-cfad-4a7a-82bd-9f2bf50045ec">
+						<jr:columnHeader style="table 7_CH" height="15" rowSpan="1">
+							<staticText>
+								<reportElement x="0" y="0" width="28" height="15" uuid="33a7f06d-ce4c-4de1-aaa0-e0fed5817919"/>
+								<textElement textAlignment="Center"/>
+								<text><![CDATA[CC]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:detailCell style="table 7_TD" height="14" rowSpan="1">
+							<textField pattern="###0.00">
+								<reportElement x="0" y="0" width="28" height="14" uuid="d3b17102-6214-4f14-8feb-fe8c3f1aa38b"/>
+								<textElement textAlignment="Center"/>
+								<textFieldExpression><![CDATA[$F{CC}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="35" uuid="b7d18e30-601a-465e-8760-49bca43727c2">
+						<jr:columnHeader style="table 7_CH" height="15" rowSpan="1">
+							<staticText>
+								<reportElement x="0" y="0" width="35" height="15" uuid="3ab2b919-6136-422d-b0ca-aa116edd411f"/>
+								<textElement textAlignment="Center"/>
+								<text><![CDATA[EF]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:detailCell style="table 7_TD" height="14" rowSpan="1">
+							<textField pattern="###0.00">
+								<reportElement x="0" y="0" width="35" height="14" uuid="960bbf8e-c090-4d36-b146-7bfbc7569a35"/>
+								<textElement textAlignment="Center"/>
+								<textFieldExpression><![CDATA[$F{ratrappage}==null?$F{EF}:$F{ratrappage}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="98" uuid="e3f4f5bd-baf0-427b-97d8-c7e3f0514c1b">
+						<jr:columnHeader style="table 7_CH" height="15" rowSpan="1">
+							<staticText>
+								<reportElement x="0" y="0" width="98" height="15" uuid="5d114345-5b57-4ce4-9d22-8c9650b722fa"/>
+								<textElement textAlignment="Center"/>
+								<text><![CDATA[MOYENNESUR20]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:columnFooter style="table 7_CH" height="42" rowSpan="1">
+							<textField evaluationTime="Page" pattern="###0.00">
+								<reportElement x="0" y="0" width="98" height="22" uuid="a0a55a56-114f-4575-8ba4-562c84d4c122"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font size="12" isBold="true"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$V{moyennesurTotal}]]></textFieldExpression>
+							</textField>
+							<textField>
+								<reportElement x="0" y="22" width="98" height="20" uuid="c846ed7b-1e78-4012-8fc7-6bb93325f0e2"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font size="12" isBold="true"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$V{detteSem1}]]></textFieldExpression>
+							</textField>
+						</jr:columnFooter>
+						<jr:detailCell style="table 7_TD" height="14" rowSpan="1">
+							<textField pattern="###0.00">
+								<reportElement x="0" y="0" width="98" height="14" uuid="11e92ca2-ca62-4942-8dff-d68c6b290080"/>
+								<textElement textAlignment="Center"/>
+								<textFieldExpression><![CDATA[$F{MOYENNESUR20}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+				</jr:table>
+			</componentElement>
+			<textField evaluationTime="Band" pattern="###0.00">
+				<reportElement positionType="Float" x="197" y="271" width="100" height="20" uuid="46efe7ba-cb2c-41f7-be4a-04243e8510da"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[($V{MoyenneSEM1}.get("KEY")+$V{MoyenSEM2}.get( "KEY1" ))/2]]></textFieldExpression>
+			</textField>
+			<textField evaluationTime="Band">
+				<reportElement positionType="Float" x="197" y="291" width="105" height="20" uuid="3da136ee-984e-45b5-9f84-aa73dcb6ff00"/>
+				<textElement textAlignment="Center" verticalAlignment="Top"/>
+				<textFieldExpression><![CDATA[$V{detteSem1}.get("KEY2")+$V{detteSem2}.get("KEY3")]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement positionType="Float" x="45" y="271" width="152" height="20" uuid="d0eb613c-c533-495c-b9c9-c1dc0621de4a"/>
+				<textElement textAlignment="Right"/>
+				<text><![CDATA[MOYENNE ANNUELLE SUR 20 :]]></text>
+			</staticText>
+			<staticText>
+				<reportElement positionType="Float" x="92" y="291" width="105" height="20" uuid="cec3d421-c0f6-4eda-9276-c68c54be95f9"/>
+				<textElement textAlignment="Right"/>
+				<text><![CDATA[DETTES ANNUELLE :]]></text>
+			</staticText>
+		</band>
+	</detail>
+</jasperReport>

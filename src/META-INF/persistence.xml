@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.1" xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
+  <persistence-unit name="EISGIP_MANAGEMENTPU" transaction-type="RESOURCE_LOCAL">
+    <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
+    <class>Entities.Addresse</class>
+    <class>Entities.Proffesseur</class>
+    <class>Entities.Niveau2</class>
+    <class>Entities.Staff</class>
+    <class>Entities.Etudiant</class>
+    <class>Entities.Niveau1</class>
+    <class>Entities.Notes</class>
+    <class>Entities.Niveaux</class>
+    <class>Entities.Cours</class>
+    <class>Entities.Anee</class>
+    <class>Entities.AnneeNotes</class>
+    <class>Codes.Niveaux</class>
+    <class>Codes.Cours</class>
+    <class>Codes.Addresse</class>
+    <class>Codes.Proffesseur</class>
+    <class>Codes.Notes</class>
+    <class>Codes.Niveau2</class>
+    <class>Codes.Anee</class>
+    <class>Codes.Etudiant</class>
+    <class>Codes.Staff</class>
+    <class>Codes.Niveau1</class>
+    <class>Entities.Compteur</class>
+    <class>Entities.Connection</class>
+    <class>Entities.Echecs</class>
+    <properties>
+      <property name="javax.persistence.jdbc.url" value="jdbc:postgresql://localhost:5432/EISGIP"/>
+      <property name="javax.persistence.jdbc.password" value="snake"/>
+      <property name="javax.persistence.jdbc.driver" value="org.postgresql.Driver"/>
+      <property name="javax.persistence.jdbc.user" value="postgres"/>
+      <property name="javax.persistence.schema-generation.database.action" value="create"/>
+    </properties>
+  </persistence-unit>
+</persistence>
